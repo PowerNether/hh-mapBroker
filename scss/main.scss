@@ -423,7 +423,7 @@ ymaps .termin-main-box {
       }
     }
     .map-apart {
-      overflow-y: scroll;
+      overflow-y: auto;
       width: 100%;
       max-height: 100%;
       background-color: #f5f5f7;
