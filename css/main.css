@@ -1275,6 +1275,7 @@ ymaps .termin-main-box {
   padding: 0 8px 0 12px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  cursor: pointer;
 }
 
 .page-node-2 .filter-map .map-apart .apart-otherLots .other-blocks .blocks-item .broker-info .toggle-title {
