@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>HomeHunter</title>
+  </head>
+  <body class="page-node-2">
+    <div class="filter-map">
+      <div class="map-card">
+        <div class="card-overlay">
+          <div class="tags">
+            <div class="chip color-v">Квартиры</div>
+            <div class="chip color-g">Апартаменты</div>
+            <div class="chip color-v">С отделкой</div>
+            <div class="chip color-v">Без отделки</div>
+            <div class="tags-list">
+              <svg>
+                <use xlink:href="./image/icons.svg#list" />
+              </svg>
+              <p>Списком</p>
+            </div>
+            <div class="apart-toggle">
+              <svg class="apart-toggle__icon">
+                <use xlink:href="./image/icons.svg#charonRightGrey" />
+              </svg>
+            </div>
+            <div class="chip color-v">
+              Панорамные окна
+              <svg>
+                <use xlink:href="./image/icons.svg#close" />
+              </svg>
+            </div>
+            <div class="chip color-w">
+              Еще
+              <svg class="charon-white">
+                <use xlink:href="./image/icons.svg#charon" />
+              </svg>
+            </div>
+            <div class="chip color-sub">
+              <svg>
+                <use xlink:href="./image/icons.svg#mail" />
+              </svg>
+              Подписаться на фильтр
+            </div>
+            <div class="chip color-r">Сбросить все фильтры</div>
+          </div>
+          <div class="points">
+            <div class="points-item point-one">
+              <div class="item-circle color-g">
+                <p></p>
+              </div>
+              <div class="item-text">
+                <p>ЖК «Turandot Residences»</p>
+              </div>
+            </div>
+            <div class="points-item point-two">
+              <div class="item-circle color-v">
+                <p>2</p>
+              </div>
+              <div class="item-text">
+                <p>ЖК «Cloud Nine»</p>
+              </div>
+            </div>
+            <div class="points-item point-three">
+              <div class="item-circle color-green">
+                <p>1</p>
+              </div>
+              <div class="item-text">
+                <p>ЖК «Доходный Дом Вильнера-Калиновского»</p>
+              </div>
+            </div>
+          </div>
+          <div class="symbol">
+            <p>
+              <span class="color-v"></span>
+              ЖК по фильтру
+            </p>
+            <p class="margin-16">
+              <span class="color-g"></span>
+              ЖК вне фильтра
+            </p>
+            <p>
+              <span class="color-green"></span>
+              Новостройки
+            </p>
+          </div>
+        </div>
+        <img src="./image/map.png" alt="Карта" class="card" />
+      </div>
+      <div class="map-apart">
+        <a class="apart-back" href="#">
+          <svg class="apart-back__icon">
+            <use xlink:href="./image/icons.svg#arrowLeftPurple" />
+          </svg>
+          Вернуться к выборке
+        </a>
+        <div class="apart-mainLot">
+          <div class="mainLot-desc">
+            <div class="desc-logo">
+              <img src="./image/logo.png" alt="logo" />
+            </div>
+            <h3 class="desc-title">ЖК «Cloud Nine»</h3>
+            <p class="desc-street">ЦАО, Якиманка, Большая Полянка улица, 9</p>
+            <p class="desc-other">
+              <span class="color-o"></span> Третьяковская ~5 мин. пешком
+              <svg>
+                <use xlink:href="./image/icons.svg#check" />
+              </svg>
+              Подземный паркинг
+            </p>
+          </div>
+          <div class="mainLot-images">
+            <div class="images-video">
+              <a href="#">
+                Видео <br />
+                обзор
+              </a>
+              <img src="./image/image(1).png" alt="img" />
+            </div>
+            <img src="./image/image(2).png" alt="img" />
+            <img src="./image/image(3).png" alt="img" />
+            <img src="./image/image(4).png" alt="img" />
+            <img src="./image/image(5).png" alt="img" />
+          </div>
+          <div class="mainLot-other">
+            <p class="color-green">Сдан в 4 кв. 2019</p>
+            <p>30 квартир/апартаментов в ЖК</p>
+            <p class="color-g">От 149 600 ₽/м²</p>
+            <a href="#">
+              Подробнее
+              <svg>
+                <use xlink:href="./image/icons.svg#charon" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="apart-otherLots">
+          <div class="otherLots-filter">
+            <div class="otherLots-left">
+              <p>Объектов:</p>
+              <div class="buttons">
+                <button class="btn-filter active button-left">
+                  140 найдено
+                </button>
+                <button class="btn-filter button-right">800 в продаже</button>
+              </div>
+            </div>
+            <div class="otherLots-right">
+              <a href="#">
+                По рейтингу
+                <svg>
+                  <use xlink:href="./image/icons.svg#charon" />
+                </svg>
+              </a>
+              <div class="buttons mini">
+                <button class="btn-view active button-left">
+                  <svg>
+                    <use xlink:href="./image/icons.svg#typeBlock" />
+                  </svg>
+                </button>
+                <button class="btn-view button-right">
+                  <svg>
+                    <use xlink:href="./image/icons.svg#typeList" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="other-blocks">
+            <div class="blocks-item">
+              <div class="item-wrapper">
+                <div class="item-image">
+                  <div class="image-overlay">
+                    <span class="overlay-id overlay-id__red">ID L: 653415</span>
+                    <div class="overlay-favorite">
+                      <span>
+                        <svg>
+                          <use xlink:href="./image/icons.svg#full-w" />
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="tags">
+                      <div class="tag-youtube">
+                        <svg>
+                          <use xlink:href="./image/icons.svg#youtube" />
+                        </svg>
+                      </div>
+                      <div class="tag-photo">
+                        <svg>
+                          <use xlink:href="./image/icons.svg#photo" />
+                        </svg>
+                        4/18
+                      </div>
+                    </div>
+                  </div>
+                  <img src="./image/image(6).png" alt="img" />
+                </div>
+                <div class="item-text">
+                  <h3 class="text-title">
+                    Уютный пентхаус в стиле Ар-Деко с видом на набережную
+                  </h3>
+                  <p class="text-jk">
+                    ЖК «Cloud Nine»
+                    <svg class="text-jk__icon">
+                      <use xlink:href="./image/icons.svg#kDarkGrey" />
+                    </svg>
+                  </p>
+                  <div class="text-area">
+                    <p class="area-item">
+                      5 (3)
+                      <span>Комнат (спален)</span>
+                    </p>
+                    <p class="area-item">
+                      1850м<sup>2</sup>
+                      <span>Общая площадь</span>
+                    </p>
+                    <p class="area-item">
+                      4/18
+                      <span>Этаж/ этажность</span>
+                    </p>
+                    <p class="area-item last-item">
+                      3
+                      <span>Санузлов</span>
+                    </p>
+                  </div>
+                  <p class="text-price">8 430 750 000 ₽</p>
+                  <p class="text-price__squares">922 000 ₽/м2</p>
+                  <div class="text-favorite">
+                    <svg class="text-favorite__star">
+                      <use xlink:href="./image/icons.svg#starGrey" />
+                    </svg>
+                    <svg class="text-favorite__charrov">
+                      <use xlink:href="./image/icons.svg#charonBottomGrey" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="item-broker">
+                <div class="broker-info">
+                  <div class="broker-left">
+                    <div class="claster-date">
+                      <svg class="date-icon">
+                        <use xlink:href="./image/icons.svg#alarmGrey" />
+                      </svg>
+                      <p class="date-text">30.09.2020</p>
+                    </div>
+                    <div class="claster-agency">
+                      <svg class="agency-icon">
+                        <use xlink:href="./image/icons.svg#presonGrey" />
+                      </svg>
+                      <p class="agency-text">WHL</p>
+                    </div>
+                    <div class="claster-com">
+                      <p class="com-text">3,5% (Э)</p>
+                      <svg class="com-icon">
+                        <use xlink:href="./image/icons.svg#questionGrey" />
+                      </svg>
+                    </div>
+                    <div class="claster-status">
+                      <p class="status-text">Снят с продажи</p>
+                    </div>
+                    <div class="claster-rating">
+                      <svg class="rating-icon">
+                        <use xlink:href="./image/icons.svg#ratingGrey" />
+                      </svg>
+                      <p class="rating-text">23</p>
+                    </div>
+                  </div>
+                  <div class="claster-toggle">
+                    <p class="toggle-title">в кластере:</p>
+                    <p class="toggle-amount">60</p>
+                    <svg class="toggle-icon">
+                      <use xlink:href="./image/icons.svg#charonBottom" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="broker-claster">
+                  <div class="claster-sorting">
+                    <a href="#" class="sorting-text">
+                      По агентству
+                      <svg class="sorting-icon">
+                        <use xlink:href="./image/icons.svg#charonBottom" />
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="claster-item">
+                    <div class="item-container">
+                      <div class="item-info">
+                        <p class="item-title">
+                          1 220 м2, 5-к, 4 эт
+                          <span class="item-title__status">
+                            — Снят с продажи
+                          </span>
+                        </p>
+                        <div class="item-tags">
+                          <div class="item-id">
+                            <svg class="id-icon">
+                              <use xlink:href="./image/icons.svg#idFlagRed" />
+                            </svg>
+                            <p class="id-text">ID L: 653415</p>
+                          </div>
+                          <div class="item-date">
+                            <p class="date-text">01.10.2020 06:49</p>
+                          </div>
+                          <div class="item-agency">
+                            <p class="agency-text">SBR</p>
+                            <svg class="agency-icon">
+                              <use xlink:href="./image/icons.svg#infoGrey" />
+                            </svg>
+                          </div>
+                          <div class="item-com">
+                            <p class="com-text">1,5% (Э)</p>
+                            <svg class="com-icon">
+                              <use
+                                xlink:href="./image/icons.svg#questionGrey"
+                              />
+                            </svg>
+                          </div>
+                          <div class="item-design">
+                            <p class="design-text">Без отделки</p>
+                          </div>
+                          <div class="item-rating">
+                            <svg class="rating-icon">
+                              <use xlink:href="./image/icons.svg#ratingGrey" />
+                            </svg>
+                            <p class="rating-text">35</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-image">
+                        <img src="./image/image(6).png" alt="image" />
+                        <svg>
+                          <use xlink:href="./image/icons.svg#plainningWhite" />
+                        </svg>
+                      </div>
+                    </div>
+                    <p class="item-price">6 550 000 000 ₽</p>
+                    <p class="item-squares">3 540 000 ₽/м2</p>
+                    <div class="item-favorite">
+                      <svg class="item-favorite__star">
+                        <use xlink:href="./image/icons.svg#starGrey" />
+                      </svg>
+                      <svg class="item-favorite__charrov">
+                        <use xlink:href="./image/icons.svg#charonBottomGrey" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="claster-item">
+                    <div class="item-container">
+                      <div class="item-info">
+                        <p class="item-title">
+                          1 220 м2, 5-к, 4 эт
+                          <span class="item-title__status">
+                            — Снят с продажи
+                          </span>
+                        </p>
+                        <div class="item-tags">
+                          <div class="item-id">
+                            <svg class="id-icon">
+                              <use xlink:href="./image/icons.svg#idFlagRed" />
+                            </svg>
+                            <p class="id-text">ID L: 653415</p>
+                          </div>
+                          <div class="item-date">
+                            <p class="date-text">01.10.2020 06:49</p>
+                          </div>
+                          <div class="item-agency">
+                            <p class="agency-text">SBR</p>
+                            <svg class="agency-icon">
+                              <use xlink:href="./image/icons.svg#infoGrey" />
+                            </svg>
+                          </div>
+                          <div class="item-com">
+                            <p class="com-text">1,5% (Э)</p>
+                            <svg class="com-icon">
+                              <use
+                                xlink:href="./image/icons.svg#questionGrey"
+                              />
+                            </svg>
+                          </div>
+                          <div class="item-design">
+                            <p class="design-text">Без отделки</p>
+                          </div>
+                          <div class="item-rating">
+                            <svg class="rating-icon">
+                              <use xlink:href="./image/icons.svg#ratingGrey" />
+                            </svg>
+                            <p class="rating-text">35</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-image">
+                        <img src="./image/image(6).png" alt="image" />
+                        <svg>
+                          <use xlink:href="./image/icons.svg#plainningWhite" />
+                        </svg>
+                      </div>
+                    </div>
+                    <p class="item-price">6 550 000 000 ₽</p>
+                    <p class="item-squares">3 540 000 ₽/м2</p>
+                    <div class="item-favorite">
+                      <svg class="item-favorite__star">
+                        <use xlink:href="./image/icons.svg#starGrey" />
+                      </svg>
+                      <svg class="item-favorite__charrov">
+                        <use xlink:href="./image/icons.svg#charonBottomGrey" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="claster-item">
+                    <div class="item-container">
+                      <div class="item-info">
+                        <p class="item-title">
+                          1 220 м2, 5-к, 4 эт
+                          <span class="item-title__status">
+                            — Снят с продажи
+                          </span>
+                        </p>
+                        <div class="item-tags">
+                          <div class="item-id">
+                            <svg class="id-icon">
+                              <use xlink:href="./image/icons.svg#idFlagRed" />
+                            </svg>
+                            <p class="id-text">ID L: 653415</p>
+                          </div>
+                          <div class="item-date">
+                            <p class="date-text">01.10.2020 06:49</p>
+                          </div>
+                          <div class="item-agency">
+                            <p class="agency-text">SBR</p>
+                            <svg class="agency-icon">
+                              <use xlink:href="./image/icons.svg#infoGrey" />
+                            </svg>
+                          </div>
+                          <div class="item-com">
+                            <p class="com-text">1,5% (Э)</p>
+                            <svg class="com-icon">
+                              <use
+                                xlink:href="./image/icons.svg#questionGrey"
+                              />
+                            </svg>
+                          </div>
+                          <div class="item-design">
+                            <p class="design-text">Без отделки</p>
+                          </div>
+                          <div class="item-rating">
+                            <svg class="rating-icon">
+                              <use xlink:href="./image/icons.svg#ratingGrey" />
+                            </svg>
+                            <p class="rating-text">35</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-image">
+                        <img src="./image/image(6).png" alt="image" />
+                        <svg>
+                          <use xlink:href="./image/icons.svg#plainningWhite" />
+                        </svg>
+                      </div>
+                    </div>
+                    <p class="item-price">6 550 000 000 ₽</p>
+                    <p class="item-squares">3 540 000 ₽/м2</p>
+                    <div class="item-favorite">
+                      <svg class="item-favorite__star">
+                        <use xlink:href="./image/icons.svg#starGrey" />
+                      </svg>
+                      <svg class="item-favorite__charrov">
+                        <use xlink:href="./image/icons.svg#charonBottomGrey" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blocks-item">
+              <div class="item-wrapper">
+                <div class="item-image">
+                  <div class="image-overlay">
+                    <span class="overlay-id">ID L: 653415</span>
+                    <div class="overlay-favorite">
+                      <span>
+                        <svg>
+                          <use xlink:href="./image/icons.svg#full-w" />
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="tags">
+                      <div class="tag-youtube">
+                        <svg>
+                          <use xlink:href="./image/icons.svg#youtube" />
+                        </svg>
+                      </div>
+                      <div class="tag-photo">
+                        <svg>
+                          <use xlink:href="./image/icons.svg#photo" />
+                        </svg>
+                        4/18
+                      </div>
+                    </div>
+                  </div>
+                  <img src="./image/image(7).png" alt="img" />
+                </div>
+                <div class="item-text">
+                  <h3 class="text-title">
+                    Апартаменты с террасой и видом на площадь
+                  </h3>
+                  <p class="text-jk">ЖК «Cloud Nine»</p>
+                  <div class="text-area">
+                    <p class="area-item">
+                      4 (2)
+                      <span>Комнат (спален)</span>
+                    </p>
+                    <p class="area-item">
+                      389 м<sup>2</sup>
+                      <span>Общая площадь</span>
+                    </p>
+                    <p class="area-item">
+                      5/9
+                      <span>Этаж/ этажность</span>
+                    </p>
+                    <p class="area-item last-item">
+                      2
+                      <span>Санузлов</span>
+                    </p>
+                  </div>
+                  <p class="text-price">80 660 750 ₽</p>
+                  <p class="text-price__squares">922 000 ₽/м2</p>
+                  <div class="text-favorite">
+                    <svg class="text-favorite__star">
+                      <use xlink:href="./image/icons.svg#starGrey" />
+                    </svg>
+                    <svg class="text-favorite__charrov">
+                      <use xlink:href="./image/icons.svg#charonBottomGrey" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="item-broker">
+                <div class="broker-info">
+                  <div class="broker-left">
+                    <div class="claster-date">
+                      <svg class="date-icon">
+                        <use xlink:href="./image/icons.svg#alarmGrey" />
+                      </svg>
+                      <p class="date-text">30.09.2020</p>
+                    </div>
+                    <div class="claster-agency">
+                      <svg class="agency-icon">
+                        <use xlink:href="./image/icons.svg#presonGrey" />
+                      </svg>
+                      <p class="agency-text">WHL</p>
+                    </div>
+                    <div class="claster-com">
+                      <p class="com-text">3,5% (Э)</p>
+                      <svg class="com-icon">
+                        <use xlink:href="./image/icons.svg#questionGrey" />
+                      </svg>
+                    </div>
+                    <div class="claster-status">
+                      <p class="status-text">Снят с продажи</p>
+                    </div>
+                    <div class="claster-rating">
+                      <svg class="rating-icon">
+                        <use xlink:href="./image/icons.svg#ratingGrey" />
+                      </svg>
+                      <p class="rating-text">23</p>
+                    </div>
+                  </div>
+                  <div class="claster-toggle">
+                    <p class="toggle-title">в кластере:</p>
+                    <p class="toggle-amount">60</p>
+                    <svg class="toggle-icon">
+                      <use xlink:href="./image/icons.svg#charonBottom" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="broker-claster">
+                  <div class="claster-sorting">
+                    <a href="#" class="sorting-text">
+                      По агентству
+                      <svg class="sorting-icon">
+                        <use xlink:href="./image/icons.svg#charonBottom" />
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="claster-item">
+                    <div class="item-container">
+                      <div class="item-info">
+                        <p class="item-title">
+                          1 220 м2, 5-к, 4 эт
+                          <span class="item-title__status">
+                            — Снят с продажи
+                          </span>
+                        </p>
+                        <div class="item-tags">
+                          <div class="item-id">
+                            <svg class="id-icon">
+                              <use xlink:href="./image/icons.svg#idFlagRed" />
+                            </svg>
+                            <p class="id-text">ID L: 653415</p>
+                          </div>
+                          <div class="item-date">
+                            <p class="date-text">01.10.2020 06:49</p>
+                          </div>
+                          <div class="item-agency">
+                            <p class="agency-text">SBR</p>
+                            <svg class="agency-icon">
+                              <use xlink:href="./image/icons.svg#infoGrey" />
+                            </svg>
+                          </div>
+                          <div class="item-com">
+                            <p class="com-text">1,5% (Э)</p>
+                            <svg class="com-icon">
+                              <use
+                                xlink:href="./image/icons.svg#questionGrey"
+                              />
+                            </svg>
+                          </div>
+                          <div class="item-design">
+                            <p class="design-text">Без отделки</p>
+                          </div>
+                          <div class="item-rating">
+                            <svg class="rating-icon">
+                              <use xlink:href="./image/icons.svg#ratingGrey" />
+                            </svg>
+                            <p class="rating-text">35</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-image">
+                        <img src="./image/image(6).png" alt="image" />
+                        <svg>
+                          <use xlink:href="./image/icons.svg#plainningWhite" />
+                        </svg>
+                      </div>
+                    </div>
+                    <p class="item-price">6 550 000 000 ₽</p>
+                    <p class="item-squares">3 540 000 ₽/м2</p>
+                    <div class="item-favorite">
+                      <svg class="item-favorite__star">
+                        <use xlink:href="./image/icons.svg#starGrey" />
+                      </svg>
+                      <svg class="item-favorite__charrov">
+                        <use xlink:href="./image/icons.svg#charonBottomGrey" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="claster-item">
+                    <div class="item-container">
+                      <div class="item-info">
+                        <p class="item-title">
+                          1 220 м2, 5-к, 4 эт
+                          <span class="item-title__status">
+                            — Снят с продажи
+                          </span>
+                        </p>
+                        <div class="item-tags">
+                          <div class="item-id">
+                            <svg class="id-icon">
+                              <use xlink:href="./image/icons.svg#idFlagRed" />
+                            </svg>
+                            <p class="id-text">ID L: 653415</p>
+                          </div>
+                          <div class="item-date">
+                            <p class="date-text">01.10.2020 06:49</p>
+                          </div>
+                          <div class="item-agency">
+                            <p class="agency-text">SBR</p>
+                            <svg class="agency-icon">
+                              <use xlink:href="./image/icons.svg#infoGrey" />
+                            </svg>
+                          </div>
+                          <div class="item-com">
+                            <p class="com-text">1,5% (Э)</p>
+                            <svg class="com-icon">
+                              <use
+                                xlink:href="./image/icons.svg#questionGrey"
+                              />
+                            </svg>
+                          </div>
+                          <div class="item-design">
+                            <p class="design-text">Без отделки</p>
+                          </div>
+                          <div class="item-rating">
+                            <svg class="rating-icon">
+                              <use xlink:href="./image/icons.svg#ratingGrey" />
+                            </svg>
+                            <p class="rating-text">35</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-image">
+                        <img src="./image/image(6).png" alt="image" />
+                        <svg>
+                          <use xlink:href="./image/icons.svg#plainningWhite" />
+                        </svg>
+                      </div>
+                    </div>
+                    <p class="item-price">6 550 000 000 ₽</p>
+                    <p class="item-squares">3 540 000 ₽/м2</p>
+                    <div class="item-favorite">
+                      <svg class="item-favorite__star">
+                        <use xlink:href="./image/icons.svg#starGrey" />
+                      </svg>
+                      <svg class="item-favorite__charrov">
+                        <use xlink:href="./image/icons.svg#charonBottomGrey" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="claster-item">
+                    <div class="item-container">
+                      <div class="item-info">
+                        <p class="item-title">
+                          1 220 м2, 5-к, 4 эт
+                          <span class="item-title__status">
+                            — Снят с продажи
+                          </span>
+                        </p>
+                        <div class="item-tags">
+                          <div class="item-id">
+                            <svg class="id-icon">
+                              <use xlink:href="./image/icons.svg#idFlagRed" />
+                            </svg>
+                            <p class="id-text">ID L: 653415</p>
+                          </div>
+                          <div class="item-date">
+                            <p class="date-text">01.10.2020 06:49</p>
+                          </div>
+                          <div class="item-agency">
+                            <p class="agency-text">SBR</p>
+                            <svg class="agency-icon">
+                              <use xlink:href="./image/icons.svg#infoGrey" />
+                            </svg>
+                          </div>
+                          <div class="item-com">
+                            <p class="com-text">1,5% (Э)</p>
+                            <svg class="com-icon">
+                              <use
+                                xlink:href="./image/icons.svg#questionGrey"
+                              />
+                            </svg>
+                          </div>
+                          <div class="item-design">
+                            <p class="design-text">Без отделки</p>
+                          </div>
+                          <div class="item-rating">
+                            <svg class="rating-icon">
+                              <use xlink:href="./image/icons.svg#ratingGrey" />
+                            </svg>
+                            <p class="rating-text">35</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-image">
+                        <img src="./image/image(6).png" alt="image" />
+                        <svg>
+                          <use xlink:href="./image/icons.svg#plainningWhite" />
+                        </svg>
+                      </div>
+                    </div>
+                    <p class="item-price">6 550 000 000 ₽</p>
+                    <p class="item-squares">3 540 000 ₽/м2</p>
+                    <div class="item-favorite">
+                      <svg class="item-favorite__star">
+                        <use xlink:href="./image/icons.svg#starGrey" />
+                      </svg>
+                      <svg class="item-favorite__charrov">
+                        <use xlink:href="./image/icons.svg#charonBottomGrey" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(".currency-btn").click(function () {
+        $(".currency-btn").removeClass("active");
+        $(this).addClass("active");
+      });
+      $(".btn-filter").click(function () {
+        $(".btn-filter").removeClass("active");
+        $(this).addClass("active");
+      });
+      $(".btn-view").click(function () {
+        $(".btn-view").removeClass("active");
+        $(this).addClass("active");
+      });
+      $(".apart-toggle").on("click tap", function () {
+        if (!$(".map-apart").hasClass("map-apart__hide")) {
+          $(".map-apart").addClass("map-apart__hide");
+          $(".apart-toggle").addClass("active");
+          $(".tags-list").css("margin-right", "32px");
+        } else {
+          $(".map-apart").removeClass("map-apart__hide");
+          $(".tags-list").css("margin-right", "4px");
+          $(".apart-toggle").removeClass("active");
+        }
+      });
+      $(".claster-toggle").on("click", function () {
+        $(this).toggleClass("active");
+        $(this).parent().parent().find(".broker-claster").slideToggle();
+      });
+    </script>
+  </body>
+</html>
